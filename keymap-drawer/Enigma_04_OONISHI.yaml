@@ -1,247 +1,190 @@
 layout: {zmk_keyboard: Enigma_04_OONISHI}
 layers:
   default:
-  - L
   - U
-  - ','
-  - .
+  - E
+  - '-'
+  - '&yo_macro'
   - F
   - W
   - R
   - Y
-  - E
-  - I
+  - ''
   - A
+  - I
   - O
-  - '-'
+  - '&yu_macro'
   - K
   - T
   - N
   - S
-  - H
-  - Z
-  - X
-  - C
-  - {t: V, h: cursor}
-  - '&td3'
-  - G
-  - D
+  - ''
+  - ''
+  - ESC
+  - {t: Z, h: LEFT ALT}
+  - {t: Ctl, h: Sft+SPACE}
+  - {t: SPACE, h: LEFT SHIFT}
+  - {t: ENTER, h: tenkey}
+  - {t: BS, h: cursor}
   - M
   - J
-  - B
+  - ''
   tenkey:
-  - Sft+TAB
-  - ↑
-  - TAB
-  - ''
-  - /
+  - '&'
+  - ^
+  - '"'
+  - $
+  - '0'
   - '7'
-  - {t: '8', type: held}
-  - {t: '9', type: held}
+  - '8'
+  - '9'
   - ''
-  - ←
-  - ↓
-  - →
-  - ''
-  - '*'
+  - '@'
+  - '|'
+  - '`'
+  - ''''
+  - '='
   - '4'
   - '5'
   - '6'
   - ''
   - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - '0'
+  - '!'
+  - /
+  - '?'
+  - '~'
+  - {type: held}
   - '1'
   - '2'
   - '3'
-  - .
+  - ''
   cursor:
-  - Sft+TAB
-  - ↑
-  - TAB
+  - F7
+  - F8
+  - F9
+  - Ctl+Alt+DEL
   - ''
   - ''
-  - HOME
-  - PgUp
-  - Prt Scn
-  - ''
-  - ←
-  - ↓
-  - →
+  - UP ARROW
   - ''
   - ''
-  - END
-  - PgDn
-  - ↑
-  - ''
-  - ''
-  - ''
-  - ''
-  - {type: held}
-  - ''
-  - ''
+  - F4
+  - F5
+  - F6
+  - '&M6_macro'
   - ''
   - ←
   - ↓
   - →
-  symbol:
-  - ''
-  - ''
   - ''
   - ''
   - F1
-  - {t: F2, type: held}
+  - F2
   - F3
-  - {t: F4, type: held}
-  - Sft+1
-  - Sft+2
-  - Sft+3
-  - Sft+4
-  - Sft+5
-  - F5
-  - F6
-  - F7
-  - F8
+  - '&M0_macro'
   - ''
-  - Sft+6
-  - Sft+7
-  - Sft+8
-  - Sft+9
-  - Sft+0
-  - F9
-  - F10
-  - F11
-  - F12
+  - {type: held}
   - ''
+  - ''
+  - ''
+  symbol: ['', '', '', '', F1, F2, F3, F4, Sft+1, Sft+2, Sft+3, Sft+4, Sft+5, F5, F6, F7, F8, '', Sft+6, Sft+7, Sft+8, Sft+9, Sft+0, F9, F10, F11, F12, '']
   macro: ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '']
-  setting:
-  - BT CLR
-  - ''
-  - BT CLR ALL
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - BT 1
-  - BT 2
-  - BT 3
-  - BT 4
-  - BT 5
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - Boot
-  - Reset
-  - {type: held}
-  - {type: held}
-  - {type: held}
-  - ''
-  - ''
-  - ''
-  - Reset
-  - Boot
+  setting: [BT CLR, '', BT CLR ALL, '', '', '', '', '', BT 1, BT 2, BT 3, BT 4, BT 5, '', '', '', '', '', Boot, Reset, '', '', '', '', '', '', Reset, Boot]
   to_CTRL: [Sft+TAB, ↑, TAB, '', '', HOME, PgUp, '', '', ←, ↓, →, '', '', END, PgDn, ↑, '', '', '', '', '', '', '', '', ←, ↓, →]
   to_SHIFT: ['', ↑, '', '', '', HOME, PgUp, '', '', ←, ↓, →, '', '', END, PgDn, ↑, '', '', '', '', '', '', '', '', ←, ↓, →]
   to_WIN: [Sft+TAB, ↑, TAB, '', '', HOME, PgUp, '', '', ←, ↓, →, '', '', END, PgDn, ↑, '', '', '', '', '', '', '', '', ←, ↓, →]
   to_ALT: [Sft+TAB, ↑, TAB, '', '', HOME, PgUp, Prt Scn, '', ←, ↓, →, '', '', END, PgDn, ↑, '', '', '', '', '', '', '', '', ←, ↓, →]
 combos:
-- p: [15, 16]
-  k: ENTER
-  l: [default, tenkey, cursor, symbol, to_CTRL, to_SHIFT, to_WIN, to_ALT]
-- p: [6, 7]
-  k: {t: BS, h: tenkey}
-  l: [default, tenkey, cursor, symbol]
-- p: [5, 7]
-  k: {t: Del, h: symbol}
-  l: [default, tenkey, cursor, symbol]
-  a: top
-- p: [0, 2]
-  k: {t: F2, h: symbol}
-  l: [default, tenkey, cursor, symbol]
-  a: top
-- p: [0, 1]
-  k: '&td1'
-  l: [default, tenkey, cursor, symbol]
-- p: [1, 2]
-  k: '&td2'
-  l: [default, tenkey, cursor, symbol]
-- p: [21, 22]
-  k: '&td4'
-  l: [default]
 - p: [9, 10]
   k: Ctl+C
-  l: [default, tenkey, cursor, symbol, to_CTRL, to_SHIFT, to_WIN, to_ALT]
+  l: [default]
 - p: [10, 11]
   k: Ctl+V
-  l: [default, tenkey, cursor, symbol, to_CTRL, to_SHIFT, to_WIN, to_ALT]
+  l: [default]
 - p: [9, 11]
   k: Ctl+X
-  l: [default, tenkey, cursor, symbol, to_CTRL, to_SHIFT, to_WIN, to_ALT]
-  a: top
-- p: [8, 9]
-  k: Ctl+A
-  l: [default, tenkey, cursor, symbol]
-- p: [7, 17]
+  l: [default]
+- p: [9, 10, 11]
+  k: Ctl+Z
+  l: [default]
+- p: [14, 6]
+  k: H
+  l: [default]
+- p: [14, 7]
   k: P
   l: [default]
-  a: right
-- p: [0, 8]
-  k: Q
+- p: [14, 26]
+  k: B
   l: [default]
-  a: left
-- p: [4, 5]
-  k: '-'
-  l: [default]
-- p: [13, 14]
-  k: '@'
-  l: [default]
-- p: [23, 24]
-  k: INTERNATIONAL 1
-  l: [default]
-- p: [4, 5]
-  k: '-'
-  l: [tenkey]
-- p: [13, 14]
+- p: [14, 15]
   k: +
   l: [tenkey]
-- p: [11, 12]
-  k: KP EQUAL
-  l: [default, tenkey]
-- p: [8, 18]
-  k: '&Sft'
-  l: [default, tenkey, cursor, symbol]
-- p: [17, 27]
-  k: '&Sft'
-  l: [default, tenkey, cursor, symbol]
-- p: [18, 19]
-  k: '&Ctl'
-  l: [default, tenkey, cursor, symbol]
-- p: [27, 26]
-  k: '&Ctl'
-  l: [default, tenkey, cursor, symbol]
+- p: [15, 16]
+  k: '-'
+  l: [tenkey]
+- p: [24, 25]
+  k: /
+  l: [tenkey]
+- p: [25, 26]
+  k: '*'
+  l: [tenkey]
 - p: [19, 20]
-  k: '&WIN'
-  l: [default, tenkey, cursor, symbol]
-- p: [26, 25]
-  k: '&WIN'
-  l: [default, tenkey, cursor, symbol]
-- p: [20, 18]
-  k: '&ALT'
-  l: [default, tenkey, cursor, symbol]
-  a: bottom
-- p: [25, 27]
-  k: '&ALT'
-  l: [default, tenkey, cursor, symbol]
-  a: bottom
-- p: [20, 21, 22]
-  k: setting
-  a: bottom
-- p: [23, 24, 25]
-  k: setting
-  a: bottom
+  k: Q
+  l: [default]
+- p: [20, 21]
+  k: C
+  l: [default]
+- p: [19, 21]
+  k: L
+  l: [default]
+- p: [19, 20, 21]
+  k: V
+  l: [default]
+- p: [14, 15]
+  k: ','
+  l: [default]
+- p: [15, 16]
+  k: .
+  l: [default]
+- p: [23, 14]
+  k: G
+  l: [default]
+- p: [24, 15]
+  k: D
+  l: [default]
+- p: [22, 11]
+  k: '&ya_macro'
+  l: [default]
+- p: [21, 10]
+  k: X
+  l: [default]
+- p: [21, 22]
+  k: TAB
+  l: [default]
+- p: [6, 7]
+  k: DEL
+  l: [default]
+- p: [0, 1]
+  k: \
+  l: [tenkey]
+- p: [1, 2]
+  k: '%'
+  l: [tenkey]
+- p: [0, 1]
+  k: '['
+  l: [default]
+- p: [1, 2]
+  k: ']'
+  l: [default]
+- p: [0, 2]
+  k: (
+  l: [default]
+- p: [0, 1, 2]
+  k: )
+  l: [default]
+- p: [2, 3]
+  k: ':'
+  l: [default]
+- p: [11, 12]
+  k: '#'
+  l: [tenkey]
