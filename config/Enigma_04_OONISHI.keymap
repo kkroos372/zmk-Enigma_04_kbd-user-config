@@ -96,6 +96,18 @@
             label = "LAYOUT_SHIFT_KEY_PRESS";
         };
 
+        kt_on: kt_on {
+            compatible = "zmk,behavior-key-toggle";
+            label = "KT_ON";
+            #binding-cells = <1>;
+        };
+
+        kt_off: kt_off {
+            compatible = "zmk,behavior-key-toggle";
+            label = "KT_OFF";
+            #binding-cells = <1>;
+        };
+
         // zmk-listeners
         // zmk-listeners
         // zmk-listeners
