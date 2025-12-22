@@ -189,5 +189,5 @@ combos:
   k: '#'
   l: [tenkey]
 - p: [11, 12]
-  k: GLOBE
+  k: Ctl+SPACE
   l: [default]
