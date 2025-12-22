@@ -22,7 +22,7 @@ layers:
   - ''
   - ESC
   - {t: Z, h: LEFT ALT}
-  - {t: Ctl, h: Sft+SPACE}
+  - {t: Sft+SPACE, h: Ctl}
   - {t: SPACE, h: LEFT SHIFT}
   - {t: ENTER, h: tenkey}
   - {t: BS, h: cursor}
