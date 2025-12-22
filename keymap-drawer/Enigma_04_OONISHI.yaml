@@ -188,3 +188,6 @@ combos:
 - p: [11, 12]
   k: '#'
   l: [tenkey]
+- p: [11, 12]
+  k: GLOBE
+  l: [default]
