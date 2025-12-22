@@ -421,6 +421,12 @@
             key-positions = <11 12>;
             layers = <1>;
         };
+
+        c32 {
+            bindings = <&kp GLOBE>;
+            key-positions = <11 12>;
+            layers = <0>;
+        };
     };
 
     keymap {
