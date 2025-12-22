@@ -278,13 +278,13 @@
 
         c8 {
             bindings = <&kp PLUS>;
-            key-positions = <14 15>;
+            key-positions = <24 26>;
             layers = <1>;
         };
 
         c9 {
             bindings = <&kp MINUS>;
-            key-positions = <15 16>;
+            key-positions = <24 25 26>;
             layers = <1>;
         };
 
