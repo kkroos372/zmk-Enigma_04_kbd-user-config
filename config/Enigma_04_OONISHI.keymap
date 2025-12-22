@@ -428,7 +428,7 @@
             bindings = <
        &kp U    &kp E           &kp MINUS            &yo_macro             &kp F        &kp W            &kp R  &kp Y
 &none  &kp A    &kp I           &kp O                &yu_macro             &kp K        &kp T            &kp N  &kp S  &none
-&none  &kp ESC  &mt LEFT_ALT Z  &mt LS(SPACE) LCTRL  &mt LEFT_SHIFT SPACE  &lt 1 ENTER  &lt 2 BACKSPACE  &kp M  &kp J  &none
+&none  &kp ESC  &mt LEFT_ALT Z  &mt LCTRL LS(SPACE)  &mt LEFT_SHIFT SPACE  &lt 1 ENTER  &lt 2 BACKSPACE  &kp M  &kp J  &none
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -436,9 +436,9 @@
 
         tenkey {
             bindings = <
-       &kp AMPS  &kp CARET  &kp DQT    &kp DLLR          &kp KP_N0  &kp KP_N7  &kp KP_N8  &kp KP_N9
-&none  &kp AT    &kp PIPE   &kp GRAVE  &kp SINGLE_QUOTE  &kp EQUAL  &kp KP_N4  &kp KP_N5  &kp KP_N6  &none
-&none  &kp EXCL  &kp FSLH   &kp QMARK  &kp TILDE         &none      &kp KP_N1  &kp KP_N2  &kp KP_N3  &none
+       &kp AMPS  &kp CARET  &kp DQT    &kp DLLR          &kp NUMBER_0  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9
+&none  &kp AT    &kp PIPE   &kp GRAVE  &kp SINGLE_QUOTE  &kp EQUAL     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &none
+&none  &kp EXCL  &kp FSLH   &kp QMARK  &kp TILDE         &none         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &none
             >;
 
             sensor-bindings = <&scroll_up_down>;
