@@ -403,7 +403,7 @@
         };
 
         c31 {
-            bindings = <&kp LA(SPACE)>;
+            bindings = <&kp GLOBE>;
             key-positions = <11 12>;
             layers = <0>;
         };
@@ -424,9 +424,9 @@
 
         tenkey {
             bindings = <
-       &kp AMPS  &kp CARET  &kp DQT    &kp DLLR          &kp NUMBER_0  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9
-&none  &kp AT    &kp PIPE   &kp GRAVE  &kp SINGLE_QUOTE  &kp EQUAL     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &none
-&none  &kp EXCL  &kp FSLH   &kp QMARK  &kp TILDE         &none         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &none
+       &mt AMPS HASH  &kp CARET  &kp DQT    &kp DLLR          &kp NUMBER_0  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9
+&none  &kp AT         &kp PIPE   &kp GRAVE  &kp SINGLE_QUOTE  &kp EQUAL     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &none
+&none  &kp EXCL       &kp FSLH   &kp QMARK  &kp TILDE         &none         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &none
             >;
 
             sensor-bindings = <&scroll_up_down>;
