@@ -72,20 +72,6 @@
             bindings = <&kp LS(U) &kp NUMBER_3 &kp NUMBER_1 &kp N9 &kp N8 &kp NUMBER_1 &kp NUMBER_2 &kp TAB>;
             label = "M6_MACRO";
         };
-
-        M1_macro: M1_macro {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LBKT &kp RIGHT_BRACKET>;
-            label = "M1_MACRO";
-        };
-
-        M2_macro: M2_macro {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS>;
-            label = "M2_MACRO";
-        };
     };
 
     behaviors {
@@ -423,7 +409,7 @@
         };
 
         c32 {
-            bindings = <&kp GLOBE>;
+            bindings = <&kp LA(SPACE)>;
             key-positions = <11 12>;
             layers = <0>;
         };
