@@ -403,12 +403,6 @@
         };
 
         c31 {
-            bindings = <&kp HASH>;
-            key-positions = <11 12>;
-            layers = <1>;
-        };
-
-        c32 {
             bindings = <&kp LA(SPACE)>;
             key-positions = <11 12>;
             layers = <0>;
