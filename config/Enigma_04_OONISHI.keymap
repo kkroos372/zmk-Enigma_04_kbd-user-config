@@ -423,7 +423,7 @@
         };
 
         c32 {
-            bindings = <&kp LC(SPACE)>;
+            bindings = <&kp GLOBE>;
             key-positions = <11 12>;
             layers = <0>;
         };
