@@ -30,7 +30,7 @@ layers:
   - J
   - ''
   tenkey:
-  - '&'
+  - {t: '#', h: '&'}
   - ^
   - '"'
   - $
@@ -186,5 +186,5 @@ combos:
   k: ':'
   l: [default]
 - p: [11, 12]
-  k: Alt+SPACE
+  k: GLOBE
   l: [default]
