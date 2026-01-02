@@ -186,8 +186,5 @@ combos:
   k: ':'
   l: [default]
 - p: [11, 12]
-  k: '#'
-  l: [tenkey]
-- p: [11, 12]
   k: Alt+SPACE
   l: [default]
