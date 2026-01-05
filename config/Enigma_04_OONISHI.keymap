@@ -62,7 +62,7 @@
         M0_macro: M0_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp NUMBER_4 &kp N0 &kp NUMBER_1 &kp NUMBER_3 &kp LS(Y) &kp O &kp I &kp O &kp M &kp LS(I)>;
+            bindings = <&kp NUMBER_4 &kp NUMBER_1 &kp N0 &kp NUMBER_3 &kp LS(Y) &kp O &kp I &kp O &kp M &kp LS(I)>;
             label = "M0_MACRO";
         };
 
