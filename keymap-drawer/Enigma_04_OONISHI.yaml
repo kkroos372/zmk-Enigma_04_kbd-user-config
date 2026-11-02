@@ -146,7 +146,7 @@ combos:
 - p: [15, 16]
   k: .
   l: [default]
-- p: [14, 13]
+- p: [14, 23]
   k: G
   l: [default]
 - p: [24, 15]
@@ -164,9 +164,6 @@ combos:
 - p: [6, 7]
   k: DEL
   l: [default]
-- p: [0, 1]
-  k: \
-  l: [tenkey]
 - p: [1, 2]
   k: '%'
   l: [tenkey]
@@ -184,7 +181,4 @@ combos:
   l: [default]
 - p: [2, 3]
   k: ':'
-  l: [default]
-- p: [11, 12]
-  k: GLOBE
   l: [default]
