@@ -146,7 +146,7 @@ combos:
 - p: [15, 16]
   k: .
   l: [default]
-- p: [14, 23]
+- p: [14, 13]
   k: G
   l: [default]
 - p: [24, 15]
