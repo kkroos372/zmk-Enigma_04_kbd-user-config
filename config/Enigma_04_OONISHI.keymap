@@ -270,13 +270,13 @@
         };
 
         c8 {
-            bindings = <&kp PLUS>;
+            bindings = <&kp KP_PLUS>;
             key-positions = <14 15>;
             layers = <1>;
         };
 
         c9 {
-            bindings = <&kp MINUS>;
+            bindings = <&kp KP_MINUS>;
             key-positions = <15 16>;
             layers = <1>;
         };
@@ -288,7 +288,7 @@
         };
 
         c11 {
-            bindings = <&kp ASTERISK>;
+            bindings = <&kp KP_ASTERISK>;
             key-positions = <25 26>;
             layers = <1>;
         };
@@ -333,8 +333,6 @@
             bindings = <&kp G>;
             key-positions = <23 14>;
             layers = <0>;
-            require-prior-idle-ms = <100>;
-            timeout-ms = <50>;
         };
 
         c19 {
@@ -380,7 +378,7 @@
         };
 
         c26 {
-            bindings = <&kp RBRC>;
+            bindings = <&kp LEFT_BRACKET>;
             key-positions = <0 1>;
             layers = <0>;
         };
