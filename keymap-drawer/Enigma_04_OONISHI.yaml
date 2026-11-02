@@ -171,7 +171,7 @@ combos:
   k: '%'
   l: [tenkey]
 - p: [0, 1]
-  k: '}'
+  k: '['
   l: [default]
 - p: [1, 2]
   k: \
