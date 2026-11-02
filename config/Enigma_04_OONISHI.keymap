@@ -69,8 +69,15 @@
         M6_macro: M6_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(U) &kp NUMBER_3 &kp NUMBER_1 &kp N9 &kp N8 &kp NUMBER_1 &kp NUMBER_2 &kp TAB>;
+            bindings = <&kp LS(U) &kp NUMBER_3 &kp NUMBER_9 &kp NUMBER_4 &kp NUMBER_7 &kp NUMBER_3 &kp NUMBER_7 &kp TAB>;
             label = "M6_MACRO";
+        };
+
+        M7_macro: new_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(M) &kp NUMBER_2 &kp NUMBER_0 &kp NUMBER_8 &kp NUMBER_3 &kp NUMBER_7 &kp NUMBER_6 &kp TAB>;
+            label = "NEW_MACRO";
         };
     };
 
@@ -264,13 +271,13 @@
 
         c8 {
             bindings = <&kp PLUS>;
-            key-positions = <24 26>;
+            key-positions = <14 15>;
             layers = <1>;
         };
 
         c9 {
             bindings = <&kp MINUS>;
-            key-positions = <24 25 26>;
+            key-positions = <15 16>;
             layers = <1>;
         };
 
@@ -373,25 +380,25 @@
         };
 
         c26 {
-            bindings = <&kp LEFT_BRACKET>;
+            bindings = <&kp RBRC>;
             key-positions = <0 1>;
             layers = <0>;
         };
 
         c27 {
-            bindings = <&kp RIGHT_BRACKET>;
+            bindings = <&kp BACKSLASH>;
             key-positions = <1 2>;
             layers = <0>;
         };
 
         c28 {
-            bindings = <&kp LEFT_PARENTHESIS>;
+            bindings = <&kp LS(NUMBER_8)>;
             key-positions = <0 2>;
             layers = <0>;
         };
 
         c29 {
-            bindings = <&kp RIGHT_PARENTHESIS>;
+            bindings = <&kp LS(NUMBER_9)>;
             key-positions = <0 1 2>;
             layers = <0>;
         };
@@ -414,9 +421,9 @@
 
         default {
             bindings = <
-       &kp U    &kp E           &kp MINUS            &yo_macro             &kp F        &kp W            &kp R  &kp Y
-&none  &kp A    &kp I           &kp O                &yu_macro             &kp K        &kp T            &kp N  &kp S  &none
-&none  &kp ESC  &mt LEFT_ALT Z  &mt LCTRL LS(SPACE)  &mt LEFT_SHIFT SPACE  &lt 1 ENTER  &lt 2 BACKSPACE  &kp M  &kp J  &none
+              &kp U    &kp E           &kp MINUS        &yo_macro             &kp F        &kp W            &kp R  &kp Y
+&M7_macro     &kp A    &kp I           &kp O            &yu_macro             &kp K        &kp T            &kp N  &kp S  &kp LS(INT_RO)
+&kp LEFT_GUI  &kp ESC  &mt LEFT_ALT Z  &mt LCTRL GRAVE  &mt LEFT_SHIFT SPACE  &lt 1 ENTER  &lt 2 BACKSPACE  &kp M  &kp J  &kp LS(MINUS)
             >;
 
             sensor-bindings = <&scroll_up_down>;
