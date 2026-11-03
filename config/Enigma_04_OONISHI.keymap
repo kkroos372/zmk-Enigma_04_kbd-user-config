@@ -222,6 +222,17 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_ALT>, <&mo 9>;
         };
+
+        lt_combo: lt_combo {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LT_COMBO";
+            bindings = <&lt>, <&kp>;
+
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            require-prior-idle-ms = <150>;
+        };
     };
 
     combos {
@@ -330,74 +341,68 @@
         };
 
         c18 {
-            bindings = <&kp G>;
-            key-positions = <14 23>;
-            layers = <0>;
-        };
-
-        c19 {
             bindings = <&kp D>;
             key-positions = <24 15>;
             layers = <0>;
         };
 
-        c20 {
+        c19 {
             bindings = <&ya_macro>;
             key-positions = <22 11>;
             layers = <0>;
         };
 
-        c21 {
+        c20 {
             bindings = <&kp X>;
             key-positions = <21 10>;
             layers = <0>;
         };
 
-        c22 {
+        c21 {
             bindings = <&kp TAB>;
             key-positions = <21 22>;
             layers = <0>;
         };
 
-        c23 {
+        c22 {
             bindings = <&kp DEL>;
             key-positions = <6 7>;
             layers = <0>;
         };
 
-        c25 {
-            bindings = <&kp PERCENT>;
-            key-positions = <1 2>;
-            layers = <1>;
-        };
-
-        c26 {
+        c23 {
             bindings = <&kp RBKT>;
             key-positions = <0 1>;
             layers = <0>;
         };
 
-        c27 {
+        c24 {
             bindings = <&kp BACKSLASH>;
             key-positions = <1 2>;
             layers = <0>;
         };
 
-        c28 {
+        c25 {
             bindings = <&kp LS(NUMBER_8)>;
             key-positions = <0 2>;
             layers = <0>;
         };
 
-        c29 {
+        c26 {
             bindings = <&kp LS(NUMBER_9)>;
             key-positions = <0 1 2>;
             layers = <0>;
         };
 
-        c30 {
+        c27 {
             bindings = <&kp COLON>;
             key-positions = <2 3>;
+            layers = <0>;
+        };
+
+        c28 {
+            bindings = <&kp G>;
+            key-positions = <14 23>;
             layers = <0>;
         };
     };
@@ -407,9 +412,9 @@
 
         default {
             bindings = <
-              &kp U    &kp E           &kp MINUS        &yo_macro             &kp F        &kp W            &kp R  &kp Y
-&M7_macro     &kp A    &kp I           &kp O            &yu_macro             &kp K        &kp T            &kp N  &kp S  &kp LS(INT_RO)
-&kp LEFT_GUI  &kp ESC  &mt LEFT_ALT Z  &mt LCTRL GRAVE  &mt LEFT_SHIFT SPACE  &lt 1 ENTER  &lt 2 BACKSPACE  &kp M  &kp J  &kp LS(MINUS)
+              &kp U    &kp E           &kp MINUS        &yo_macro             &kp F              &kp W            &kp R  &kp Y
+&M7_macro     &kp A    &kp I           &kp O            &yu_macro             &kp K              &kp T            &kp N  &kp S  &kp LS(INT_RO)
+&kp LEFT_GUI  &kp ESC  &mt LEFT_ALT Z  &mt LCTRL GRAVE  &mt LEFT_SHIFT SPACE  &lt_combo 1 ENTER  &lt 2 BACKSPACE  &kp M  &kp J  &kp LS(MINUS)
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -417,9 +422,9 @@
 
         tenkey {
             bindings = <
-       &mt AMPS HASH  &kp CARET  &kp DQT    &kp DLLR          &kp NUMBER_0  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9
-&none  &kp AT         &kp PIPE   &kp GRAVE  &kp SINGLE_QUOTE  &kp EQUAL     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &none
-&none  &kp EXCL       &kp FSLH   &kp QMARK  &kp TILDE         &none         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &none
+             &mt AMPS HASH  &kp CARET  &kp DQT    &kp DLLR          &kp NUMBER_0  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9
+&kp PERCENT  &kp AT         &kp PIPE   &kp GRAVE  &kp SINGLE_QUOTE  &kp LS(INT1)  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &none
+&none        &kp EXCL       &kp FSLH   &kp QMARK  &kp TILDE         &none         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &none
             >;
 
             sensor-bindings = <&scroll_up_down>;
