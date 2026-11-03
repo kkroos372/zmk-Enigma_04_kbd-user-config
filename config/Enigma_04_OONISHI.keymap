@@ -280,18 +280,6 @@
             layers = <0>;
         };
 
-        c8 {
-            bindings = <&kp KP_PLUS>;
-            key-positions = <14 15>;
-            layers = <1>;
-        };
-
-        c9 {
-            bindings = <&kp KP_MINUS>;
-            key-positions = <15 16>;
-            layers = <1>;
-        };
-
         c10 {
             bindings = <&kp SLASH>;
             key-positions = <24 25>;
@@ -395,14 +383,14 @@
         };
 
         c27 {
-            bindings = <&kp COLON>;
+            bindings = <&kp SINGLE_QUOTE>;
             key-positions = <2 3>;
             layers = <0>;
         };
 
         c28 {
             bindings = <&kp G>;
-            key-positions = <14 4>;
+            key-positions = <14 23>;
             layers = <0>;
         };
     };
@@ -423,8 +411,8 @@
         tenkey {
             bindings = <
              &mt AMPS HASH  &kp CARET  &kp DQT    &kp DLLR          &kp NUMBER_0  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9
-&kp PERCENT  &kp AT         &kp PIPE   &kp GRAVE  &kp SINGLE_QUOTE  &kp LS(INT1)  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &none
-&none        &kp EXCL       &kp FSLH   &kp QMARK  &kp TILDE         &none         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &none
+&kp PERCENT  &kp AT         &kp PIPE   &kp GRAVE  &kp SINGLE_QUOTE  &kp LS(INT1)  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp KP_PLUS
+&none        &kp EXCL       &kp FSLH   &kp QMARK  &kp TILDE         &none         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_MINUS
             >;
 
             sensor-bindings = <&scroll_up_down>;
