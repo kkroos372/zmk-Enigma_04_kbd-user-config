@@ -24,7 +24,7 @@ layers:
   - {t: Z, h: LEFT ALT}
   - {t: '`', h: Ctl}
   - {t: SPACE, h: LEFT SHIFT}
-  - {t: ENTER, h: tenkey}
+  - {t: ENTER, h: '&lt 1'}
   - {t: BS, h: cursor}
   - M
   - J
@@ -38,12 +38,12 @@ layers:
   - '7'
   - '8'
   - '9'
-  - ''
+  - '%'
   - '@'
   - '|'
   - '`'
   - ''''
-  - '='
+  - Sft+INT1
   - '4'
   - '5'
   - '6'
@@ -53,7 +53,7 @@ layers:
   - /
   - '?'
   - '~'
-  - {type: held}
+  - ''
   - '1'
   - '2'
   - '3'
@@ -146,9 +146,6 @@ combos:
 - p: [15, 16]
   k: .
   l: [default]
-- p: [14, 23]
-  k: G
-  l: [default]
 - p: [24, 15]
   k: D
   l: [default]
@@ -164,9 +161,6 @@ combos:
 - p: [6, 7]
   k: DEL
   l: [default]
-- p: [1, 2]
-  k: '%'
-  l: [tenkey]
 - p: [0, 1]
   k: ']'
   l: [default]
@@ -181,4 +175,7 @@ combos:
   l: [default]
 - p: [2, 3]
   k: ':'
+  l: [default]
+- p: [14, 23]
+  k: G
   l: [default]
