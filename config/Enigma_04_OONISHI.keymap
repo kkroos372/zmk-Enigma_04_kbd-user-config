@@ -402,7 +402,7 @@
 
         c28 {
             bindings = <&kp G>;
-            key-positions = <14 23>;
+            key-positions = <14 4>;
             layers = <0>;
         };
     };
